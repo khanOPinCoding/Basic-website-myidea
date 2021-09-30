@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+header {
+    background: black;
+}
+
+nav {
+    background: black;
+    height: 60px;
+}
+
+#link1,
+#link2,
+#link3,
+#link4 {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+#link1:hover,
+#link2:hover,
+#link3:hover,
+#link4:hover {
+    color: coral;
+}
+
+
+/* .li {
+    min-height: 100px;
+    text-align: center;
+    margin: 10px;
+    padding-top: 10vh;
+} */
+
+.navlink {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.logo {
+    color: white;
+    display: flex;
+    position: absolute;
+    height: 60px;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+@media screen and (max-width: 786px) {
+    .line {
+        width: 30px;
+        height: 2px;
+        background: rgb(255, 255, 255);
+        margin: 5px;
+    }
+    nav {
+        position: relative;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+    .navlink {
+        position: absolute;
+        background: coral;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(90px at 90% -30%);
+        -webkit-clip-path: circle(90px at 90% -30%);
+        transition: all 1s ease-out;
+        pointer-events: all;
+    }
+    .navlink.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+    }
+}
+
+
+/* Section 2  */
+
+#khan {
+    background: black;
+    color: white;
+    width: 100%;
+    height: 500px;
+}
+
+#p1 {
+    padding-top: 90px;
+    padding-bottom: 10px;
+    font-size: 10rem;
+    text-align: center;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+    /* transition: color 1s ease-out; */
+    transition: -webkit-transform 1s linear, color 1s ease-out;
+}
+
+ion-icon {
+    color: white;
+    transition: color 1s ease-out;
+}
+
+ion-icon:hover {
+    color: coral;
+}
+
+#p1:hover {
+    color: coral;
+    -webkit-transform: scale(1.03);
+}
+
+#p2:hover,
+#p3:hover,
+#p4:hover {
+    color: coral;
+    cursor: pointer;
+}
+
+#p2,
+#p3,
+#p4 {
+    line-height: 0.5rem;
+    text-align: center;
+    font-family: 'Vollkorn', serif;
+    transition: color 1s;
+    letter-spacing: 5px;
+}
+
+@media screen and (max-width: 786px) {
+    #p1 {
+        font-size: 5rem;
+        padding-top: 150px;
+    }
+}
+
+
+/* Bootstrap Css  */
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgb(0, 0, 0);
+    border: solid rgba(255, 255, 255, 0.15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgb(0, 0, 0), inset 0 .125em .5em rgb(0, 0, 0);
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    border-radius: .75rem;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon-link>.bi {
+    margin-top: .125rem;
+    margin-left: .125rem;
+    transition: transform .25s ease-in-out;
+    fill: currentColor;
+}
+
+.icon-link:hover>.bi {
+    transform: translate(.25rem);
+}
+
+.icon-square {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: .75rem;
+}
+
+.rounded-4 {
+    border-radius: .5rem;
+}
+
+.rounded-5 {
+    border-radius: 1rem;
+}
+
+.text-shadow-1 {
+    text-shadow: 0 .125rem .25rem rgb(0, 0, 0);
+}
+
+.text-shadow-2 {
+    text-shadow: 0 .25rem .5rem rgb(0, 0, 0);
+}
+
+.text-shadow-3 {
+    text-shadow: 0 .5rem 1.5rem rgb(0, 0, 0);
+}
+
+.card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/*------------------------------------------------------------------------------
+--------------------------Bootstrap css End-------------------------------------
+*/
+
+#icon-grid {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.icon:hover {
+    color: coral;
+}
+
+
+/* Our Work Css  */
+
+#section-3 {
+    background: black;
+    color: white;
+}
+
+.works {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    margin-top: -48px;
+}
+
+.work-img {
+    border-radius: 10px;
+    width: 250px;
+    margin-bottom: 10px;
+    transition: -webkit-transform 0.5s ease-in;
+}
+
+.work-img:hover {
+    -webkit-transform: scale(1.03);
+}
+
+.work-para {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Vollkorn', serif;
+    margin-bottom: 30px;
+}
+
+.work-1,
+.work-2,
+.work-3 {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 786px) {
+    .works {
+        display: block;
+        position: relative;
+        left: 100px;
+        /* margin-bottom: 29px; */
+    }
+    .work-1,
+    .work-2,
+    .work-3 {
+        width: 250px;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    .work-para {
+        margin-top: 10px;
+    }
+    .testimonial {
+        margin-top: -30px;
+    }
+}
+
+
+/* Section-3  */
+
+
+/* Carousel base class */
+
+
+/* .carousel {
+    margin-bottom: 4rem;
+} */
+
+
+/* Since positioning the image, we need to help out the caption */
+
+
+/* .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    color: #000 !important;
+}
+
+.carousel-control-prev-icon {
+    background-color: black !important;
+    border-radius: 15px;
+}
+
+.carousel-control-next-icon {
+    background-color: black !important;
+    border-radius: 15px;
+} */
+
+
+/* Declare heights because of positioning of img element */
+
+
+/* .carousel-item {
+    height: 32rem;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+} */
+
+#section-4 {
+    color: black;
+}
+
+.testi-img {
+    width: 700px;
+    border-radius: 30px;
+}
+
+
+/* Last Section  */
+
+#last {
+    color: white;
+    background: black;
+}
+
+.form-p {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.main-form {
+    margin-top: 50px;
+    display: flex;
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-input {
+    width: 250px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    border: 1px solid coral;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 150px;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: coral;
+    color: white;
+}
+
+
+/* Footer  */
+
+.main-footer {
+    background-color: rgb(248, 157, 124);
+    color: white;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.copyright {
+    padding-left: 70px;
+}
+
+.main-icons {
+    margin-right: 70px;
+}
+
+.fab {
+    color: black;
+    margin-left: 10px;
+}
+
+.facebook:hover {
+    color: #1778F2;
+}
+
+.twitter:hover {
+    color: #1DA1F2;
+}
+
+.github:hover {
+    color: white;
+}
+
+.linked:hover {
+    color: #0e76a8;
+}
+
+@media screen and (max-width: 786px) {
+    .main-footer {
+        padding: 50px;
+    }
+    .copyright {
+        padding-left: 10px;
+    }
+    .main-icons {
+        margin-right: 10px;
+    }
+}
